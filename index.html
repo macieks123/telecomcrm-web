@@ -217,11 +217,11 @@ h3 { font-family: var(--f-display); font-weight: 700; font-size: 1.2rem; line-he
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 26px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
 .card .icon-box { width: 42px; height: 42px; border-radius: 11px; display: grid; place-items: center; background: var(--blue-wash); color: var(--blue-ink); margin-bottom: 6px; }
 .label { font: 600 11.5px/1.2 var(--f-mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue-ink); }
-.card p { color: var(--ink-2); font-size: 15px; }
+.card p:not(.label) { color: var(--ink-2); font-size: 15px; }
 .checks { list-style: none; padding: 16px 0 0; margin-top: auto; border-top: 1px solid var(--line); display: grid; gap: 9px; }
 .checks li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; font-weight: 600; line-height: 1.4; }
 .checks .ico { width: 17px; height: 17px; color: var(--blue); margin-top: 1px; stroke-width: 2.2; }
-#platform .card p { margin-bottom: 18px; }
+#platform .card p:not(.label) { margin-bottom: 18px; }
 
 /* AI delivery panel */
 .dark-panel { background: var(--panel); color: var(--panel-ink); border-radius: 26px; padding: clamp(28px, 5.5vw, 68px); border: 1px solid var(--panel-line); }
@@ -266,7 +266,7 @@ h3 { font-family: var(--f-display); font-weight: 700; font-size: 1.2rem; line-he
 .band .card { background: var(--panel-2); border-color: var(--panel-line); }
 .band .card .ico { color: var(--panel-blue); width: 24px; height: 24px; margin-bottom: 8px; }
 .band .label { color: var(--panel-blue); }
-.band .card p { color: var(--panel-ink-2); }
+.band .card p:not(.label) { color: var(--panel-ink-2); }
 .band .note { background: var(--panel-2); border-color: var(--panel-line); }
 .band .note .icon-sq { background: rgb(93 189 233 / 0.14); color: var(--panel-blue); }
 .band .note span { color: var(--panel-ink-2); }
